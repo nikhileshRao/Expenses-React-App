@@ -1,12 +1,12 @@
 import "./ExpenseDate.css";
 
 const ExpenseDate = (date) => {
-  console.log(date);
+  const dateValue = date.date.split(",");
   return (
     <div className="expense-date ">
-      <div className="expense-date__day">18</div>
-      <div className="expense-date__month">12</div>
-      <div className="expense-date__year ">2020 </div>
+      <div className="expense-date__day">{dateValue[2]}</div>
+      <div className="expense-date__month">{dateValue[1]}</div>
+      <div className="expense-date__year ">{dateValue[0]} </div>
     </div>
   );
 };
