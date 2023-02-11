@@ -1,5 +1,5 @@
-import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import ExpenseItem from "../ExpenseItem/ExpenseItem";
+import Card from "../Card/Card";
 import "./Expenses.css";
 
 const Expenses = (data) => {
